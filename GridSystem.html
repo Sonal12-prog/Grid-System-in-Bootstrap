@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>GRID SYSTEM</title>
+		<link rel="stylesheet" href="bootstrap.css">
+		<style type="text/css">
+			.pink{
+				background: pink;
+				border: 1px solid purple;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Every container in bootstrap can be divided into 12 different columns and then using grid system we can pick how many of the 12 units each element should take up. -->
+		<!-- Whenever you use bootstrap grid,it should be inside class container -->
+		<div class="container">
+			<!-- Inside each row we have 12 units to pick up from -->
+			<!-- <div class="row">
+				 Now I will create 2 divs that will take 6 rows each and apply class pink to 2 divs.On collapsing or resizing they stack up on each other
+				<!-- 4 sizes:check in grid system doc -->
+				<!-- <div class="col-md-6 pink">COL LG 6</div>
+				<div class="col-md-6 pink">COL LG 6</div>
+			</div> --> 
+            <div class="row">
+            	<!-- nesting grid -->
+            	   <div class="col-md-3  col-sm-6 pink">
+            	   	<div class="row">
+            	   		<div class="col-md-6">HALFWAY</div>
+            	   		<div class="col-md-6">HALFWAY</div>
+            	   	</div>
+            	   </div>
+            	    <div class="col-md-3 col-sm-6 pink">CHECK 2</div>
+            	     <div class="col-md-3 col-sm-6 pink">CHECK 3</div>
+                     <div class="col-md-3 col-sm-6 pink">CHECK 4</div>
+
+            </div>
+			
+		</div>
+	</body>
+</html>
